@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gemorecom — Game AI Generator</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="header" role="banner" aria-label="Main navigation">
+    <div class="brand">
+      <div class="logo">G</div>
+      <div>
+        <h1>Gemorecom</h1>
+        <div class="small">AI Game Asset Studio</div>
+      </div>
+    </div>
+    <div class="nav-actions">
+      <a class="btn" href="#gallery">Explore</a>
+      <button class="meet-button" id="open-chat">Meet Gemorecom</button>
+    </div>
+  </header>
+
+  <!-- HERO: fullscreen video -->
+  <main>
+    <section class="hero" role="region" aria-label="Intro">
+      <!-- full screen code -->
+      <video autoplay muted loop playsinline preload="auto" id="bgvid">
+        <source src="https://staticfiles.warthunder.com/upload/image/media/warland/wl193.mp4" type="video/mp4">
+        <!-- fallback poster -->
+        <img src="/static/images/hero.jpg" alt="">
+      </video>
+
+      <div class="hero-inner container">
+        <div class="hero-content">
+          <div class="lead">
+            <div class="typing-line">
+              <h2>Build worlds.</h2>
+            </div>
+            <div class="typing-line">
+              <h2>Generate lore.</h2>
+            </div>
+            <div class="typing-line">
+              <h2>Ship faster.</h2>
+            </div>
+            <p class="typing-line">Gemorecom uses local AI to create game assets — names, quests, items, and more. Fast, private, and designed for creators.</p>
+
+            <div class="hero-actions">
+              <a class="btn primary large" href="#gallery">Start Exploring</a>
+              <button class="btn" id="open-chat-hero">Chat with Gemorecom</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- thumbnails on right -->
+        <!-- <div class="hero-thumbnails">
+          <div class="thumb pulse"><img src="https://media.istockphoto.com/id/2262374162/video/pc-gaming.avif?s=640x640&k=20&c=MjQvBiB55X8SteYIe8s_p-4hm6O9tIarf2-oQf9Cwuk=" alt="Gameplay thumbnail 1"></div>
+          <div class="thumb pulse"><img src="https://media.istockphoto.com/id/2203584332/video/young-female-hacker-working-on-a-computer-at-night.jpg?s=480x480&k=20&c=McAOS_1rPUHN4WZiemIK512fqsEX_Mo0vaoZnMZjy9A=" alt="Gameplay thumbnail 2"></div>
+          <div class="thumb pulse"><img src="https://media.istockphoto.com/id/1289473220/video/gaming-concept-young-sexy-woman-with-tattoos-sits-in-the-chair-in-neon-gaming-club-and.jpg?s=480x480&k=20&c=a9QITkCBPfIHxry0BMODyiPO-8xZWh1D4okZUtFGhKI=" alt="Gameplay thumbnail 3"></div>
+        </div>
+      </div> -->
+    </section>
+
+    <!-- GALLERY: videos & images -->
+    <section class="container section" id="gallery" aria-label="Gallery">
+      <div class="section-header">
+        <h3>Featured assets & trailers</h3>
+        <div class="small">Responsive design — tap an asset to preview</div>
+      </div>
+
+      <div class="grid" role="list">
+        <!-- Video card -->
+        <article class="card" role="listitem" tabindex="0" aria-label="Trailer 1">
+          <video class="media" src="https://media.istockphoto.com/id/2214185705/video/gaming-world-word-cloud-animation.mp4?s=mp4-640x640-is&k=20&c=BDa6NhbcXzOobERos_Qthk6wKveXd0l84y2rp3wkqOE=" muted playsinline loop preload="metadata"></video>
+          <div class="meta">
+            <div>
+              <div class="title">Eldoria – Teaser</div>
+              <div class="sub">Cinematic trailer</div>
+            </div>
+            <div class="small">2:12</div>
+          </div>
+        </article>
+
+        <!-- Image card -->
+        <article class="card" role="listitem" tabindex="0" aria-label="Concept art">
+          <img class="media" src="https://media.istockphoto.com/id/1405822353/video/mock-up-fake-video-game-gameplay-loop-desert-obstacle-car-racing-fake-game-animation.avif?s=640x640&k=20&c=kHgfgO9th5yZZHY3IA12nv7mUzTtETB3o76a7ZKF9zI=" alt="Concept art">
+          <div class="meta">
+            <div>
+              <div class="title">Frostfield Concept</div>
+              <div class="sub">Env art</div>
+            </div>
+            <div class="small">2k</div>
+          </div>
+        </article>
+
+        <!-- More cards -->
+        <article class="card" role="listitem" tabindex="0" aria-label="Trailer 2">
+          <video class="media" src="https://media.istockphoto.com/id/2194099091/video/3d-space-battle-game-on-smartphone-screen.mp4?s=mp4-640x640-is&k=20&c=LGBBIqu8L87f-2QS7g3GGji9kuog6P2Kd2llncODTXc=" muted playsinline loop preload="metadata"></video>
+          <div class="meta">
+            <div>
+              <div class="title">Stormbreak — Gameplay</div>
+              <div class="sub">Gameplay clip</div>
+            </div>
+            <div class="small">1:45</div>
+          </div>
+        </article>
+
+        <article class="card" role="listitem" tabindex="0" aria-label="Character art">
+          <img class="media" src="https://media.istockphoto.com/id/1407571258/video/mock-up-fake-video-game-gameplay-loop-fantasy-moba-pvp-multiplayer-mmorpg-fake-game-animation.avif?s=640x640&k=20&c=va7D814glNkZZ4jpIoxyhyEJe0JcmNC0CohBYSJHGhQ=" alt="Character art">
+          <div class="meta">
+            <div>
+              <div class="title">Knight of Ash</div>
+              <div class="sub">Character concept</div>
+            </div>
+            <div class="small">4k</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer container">
+      Gemorecom — AI tools for faster game production • Built with local AI
+    </footer>
+  </main>
+
+  <style>
+    /* Modern chat button styling */
+    .btn.primary {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.35);
+      font-weight: 700;
+      border: none;
+    }
+    .btn.primary:hover {
+      box-shadow: 0 12px 35px rgba(102, 126, 234, 0.45);
+    }
+    
+    .meet-button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.35) !important;
+    }
+    .meet-button:hover {
+      box-shadow: 0 12px 35px rgba(102, 126, 234, 0.45) !important;
+      transform: translateY(-3px);
+    }
+
+    /* Hero two-column layout */
+    .hero-inner {
+      display: flex !important;
+      flex-direction: row !important;
+      gap: 3rem !important;
+      align-items: flex-start !important;
+      padding: 2rem !important;
+      width: 100% !important;
+      max-width: 1200px !important;
+    }
+
+    .hero-content {
+      flex: 1 !important;
+      display: flex !important;
+      flex-direction: column !important;
+      justify-content: flex-start !important;
+    }
+
+    .lead {
+      padding: 2rem !important;
+      background: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      backdrop-filter: none !important;
+      margin: 0 !important;
+    }
+
+    .lead h2 {
+      margin: 0 !important;
+      font-size: clamp(1.8rem, 4vw, 3rem) !important;
+      letter-spacing: -0.02em !important;
+      line-height: 1.1 !important;
+      background: linear-gradient(90deg,#fff, #e6f8ff 40%, rgba(255,255,255,0.7)) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      margin-bottom: 0.8rem !important;
+    }
+
+    .typing-line {
+      overflow: hidden;
+      animation: slideDown 0.8s ease forwards;
+    }
+
+    .typing-line:nth-child(1) { animation-delay: 0s; }
+    .typing-line:nth-child(2) { animation-delay: 0.6s; }
+    .typing-line:nth-child(3) { animation-delay: 1.2s; }
+    .typing-line:nth-child(4) { animation-delay: 1.8s; }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .lead p {
+      margin: 1rem 0 0 0 !important;
+      color: var(--muted) !important;
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+    }
+
+    /* Right side thumbnails */
+    .hero-thumbnails {
+      flex: 0 0 280px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 1.2rem !important;
+    }
+
+    .thumb {
+      position: relative !important;
+      min-width: 100% !important;
+      border-radius: 14px !important;
+      overflow: hidden !important;
+      border: 1px solid rgba(255,255,255,0.06) !important;
+      background: var(--glass) !important;
+      height: 200px;
+      animation: fadeInUp 0.8s ease forwards !important;
+    }
+
+    .thumb:nth-child(1) { animation-delay: 0.4s !important; }
+    .thumb:nth-child(2) { animation-delay: 0.8s !important; }
+    .thumb:nth-child(3) { animation-delay: 1.2s !important; }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .thumb img {
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      display: block !important;
+      transition: transform 0.4s ease !important;
+    }
+
+    .thumb:hover img {
+      transform: scale(1.08) !important;
+    }
+
+    @media (max-width: 800px) {
+      .hero-inner {
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+      }
+
+      .hero-thumbnails {
+        flex: 1;
+        flex-direction: row;
+        order: -1;
+      }
+
+      .thumb {
+        flex: 1;
+        height: 140px;
+      }
+    }
+  </style>
+
+  <script>
+    // Buttons open aichat page
+    document.getElementById('open-chat')?.addEventListener('click', ()=> window.location.href = '/aichat');
+    document.getElementById('open-chat-hero')?.addEventListener('click', ()=> window.location.href = '/aichat');
+
+    // Thumbnail hover effects
+    document.querySelectorAll('.hero-thumbnails .thumb').forEach(thumb => {
+      thumb.addEventListener('mouseenter', () => {
+        thumb.style.transform = 'translateY(-8px)';
+      });
+      thumb.addEventListener('mouseleave', () => {
+        thumb.style.transform = 'translateY(0)';
+      });
+    });
+
+    // autoplay small videos on hover (progressive enhancement)
+    document.querySelectorAll('.card').forEach(card=>{
+      const vid = card.querySelector('video');
+      if(!vid) return;
+      card.addEventListener('mouseenter', ()=> vid.play());
+      card.addEventListener('mouseleave', ()=> vid.pause());
+      card.addEventListener('focus', ()=> vid.play());
+      card.addEventListener('blur', ()=> vid.pause());
+    });
+
+    // Add stagger effect to typing lines on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+        }
+      });
+    });
+
+    document.querySelectorAll('.typing-line, .thumb').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
