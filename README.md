@@ -274,13 +274,13 @@ Example response
 
 <p align="center">
 
-<img src="Screenshot 2026-03-05 1309.png" width="80%"/>
+<img src="Screenshot 2026-03-05 130939.png" width="80%"/>
 
-<img src="Screenshot 2026-03-05 1311.png" width="80%"/>
+<img src="Screenshot 2026-03-05 131132.png" width="80%"/>
 
-<img src="Screenshot 2026-03-05 1314.png" width="80%"/>
+<img src="Screenshot 2026-03-05 131420.png" width="80%"/>
 
-<img src="Screenshot 2026-03-05 1315.png" width="80%"/>
+<img src="Screenshot 2026-03-05 131524.png" width="80%"/>
 
 </p>
 
@@ -349,4 +349,5 @@ Artificial Intelligence
 Data Science
 Generative AI
 Full Stack Development
+
 
